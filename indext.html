@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="sub_container">
+            <div class="percentage">
+                <h2>Bill</h2>
+                <input type="number" placeholder="$" id="bill_el reset">
+                <h4> Select Tip %</h4>
+                <div>
+                    <button onclick="tipAmount(5)">5%</button>
+                    <button onclick="tipAmount(10)">10%</button>
+                    <button onclick="tipAmount(15)">15%</button>
+                    <button onclick="tipAmount(25)">25%</button>
+                    <button onclick="tipAmount(50)">50%</button>
+                    <button></button>
+                </div>
+
+                <p>Number of People</p>
+                <input type="number" placeholder="people" id="people_el reset">
+
+            </div>
+            <div class="displayborad">
+                <div>
+                    <h3>Tip Amount</h3>
+                    <p>/ person</p>
+                    <p id="tip_amount reset">$</p>
+                </div>
+                <div>
+                    <h3>Total</h3>
+                    <p>/ person</p>
+                    <p id="Amount_per_person reset">$</p>
+                </div>
+                <button onclick="totalAmount()">Calculate</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
