@@ -13,34 +13,45 @@
         <div class="sub_container">
             <div class="percentage">
                 <h2>Bill</h2>
-                <input type="number" placeholder="$" id="bill_el reset">
+                <p id="error" style="color: red;"></p>
+                <input type="number" placeholder="$" id="bill">
                 <h4> Select Tip %</h4>
-                <div>
-                    <button onclick="tipAmount(5)">5%</button>
-                    <button onclick="tipAmount(10)">10%</button>
-                    <button onclick="tipAmount(15)">15%</button>
-                    <button onclick="tipAmount(25)">25%</button>
-                    <button onclick="tipAmount(50)">50%</button>
-                    <button></button>
+                <div class="tipButtonDiv">
+                    <button class="tipButton" onclick="tipAmount(5)">5%</button>
+                    <button class="tipButton" onclick="tipAmount(10)">10%</button>
+                    <button class="tipButton" onclick="tipAmount(15)">15%</button>
+                    <button class="tipButton" onclick="tipAmount(25)">25%</button>
+                    <button class="tipButton" onclick="tipAmount(50)">50%</button>
+                    <button class="tipButton">Custom</button>
+
                 </div>
 
                 <p>Number of People</p>
-                <input type="number" placeholder="people" id="people_el reset">
+                <p id="numOfPeopleError" style="color: red;"></p>
+                <input type="number" placeholder="people" id="people">
 
             </div>
             <div class="displayborad">
-                <div>
-                    <h3>Tip Amount</h3>
-                    <p>/ person</p>
-                    <p id="tip_amount reset">$</p>
+                <div class="tipAmountDisplay">
+                    <div>
+                        <h3 class="tipAmountDisplayh3">Tip Amount</h3>
+                        <p class="tipAmountDisplayp">/ person</p>
+                    </div>
+                    <div>
+                        <p id="tipAmount" class="amountFigure">$0.00</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Total</h3>
-                    <p>/ person</p>
-                    <p id="Amount_per_person reset">$</p>
+                <div class="tipAmountDisplay">
+                    <div>
+                        <h3 class="tipAmountDisplayh3">Total</h3>
+                        <p class="tipAmountDisplayp">/ person</p>
+                    </div>
+                    <div>
+                        <p id="amountPerPerson" class="amountFigure">$0.00</p>
+                    </div>
                 </div>
-                <button onclick="totalAmount()">Calculate</button>
-                <button onclick="reset()">Reset</button>
+                <button class="tipButton" onclick="totalAmount()">Calculate</button> <br>
+                <button class="tipButton" onclick="reset()">Reset</button>
             </div>
         </div>
     </div>
