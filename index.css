@@ -125,7 +125,8 @@ input:hover {
     width: 100rem;
     align-items: center;
   }
-  .percentage{
-  margin-bottom: 20rem;
-  margin-left: 5rem;
+  .percentage {
+    margin-bottom: 20rem;
+    margin-left: 5rem;
+  }
 }

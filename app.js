@@ -36,10 +36,6 @@ function totalAmount() {
     return 0;
   }
 }
-
-console.log(tipAmount(25));
-console.log(totalAmount(350));
-
 function reset() {
   billEl.value = "";
   peopleEl.value = "";
